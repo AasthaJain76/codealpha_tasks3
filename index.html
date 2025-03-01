@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!--google icon link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!--link css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--included all project-->
+    <div class="container">
+      
+      <!--start section1 top-bar-->
+      <div class="top-bar">
+        <span class="material-symbols-outlined"> expand_circle_down </span>
+        <span class="head-text">Now Playing</span>
+        <span class="material-symbols-outlined"> more_horiz </span>
+      </div>
+      <!--end section1 top-bar-->
+
+      <!--start section2 img-area -->
+      <div class="img-area">
+        <img src="" alt="image" />
+      </div>
+      <!-- end section2 imag-area -->
+
+      <!--start section3 name and artist-->
+      <div class="song-detalies">
+        <p class="name"></p>
+        <p class="artist"></p>
+      </div>
+      <!-- end section 3 -->
+
+      <!--section4 include audio and current-time and duration-time-->
+      <div class="progress-area">
+        <div class="progress-bar">
+          <audio src="" id="main-audio"></audio>
+        </div>
+        <div class="song-timer">
+          <span class="current-time">00:00</span>
+          <span class="max-duration">00:00</span>
+        </div>
+      </div>
+      <!--end section4 -->
+
+      <!--start section 5 control button-->
+      <div class="controls">
+        <span
+          id="repeat-plist"
+          class="material-symbols-outlined"
+          title="Playlist looped"
+          >repeat</span
+        >
+        <span id="prev" class="material-symbols-outlined"> skip_previous </span>
+        <div class="play-pause">
+          <span class="material-symbols-outlined"> play_arrow </span>
+        </div>
+        <span id="next" class="material-symbols-outlined"> skip_next </span>
+        <span class="material-symbols-outlined"> queue_music </span>
+      </div>
+      <!--the end -->
+    </div>
+    <script src="list.js"></script>
+    <script src="scipt.js"></script>
+  </body>
+</html>
